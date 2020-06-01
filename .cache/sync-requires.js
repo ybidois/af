@@ -6,8 +6,6 @@ const preferDefault = m => m && m.default || m
 
 exports.components = {
   "component---cache-dev-404-page-js": hot(preferDefault(require("/Users/ybidois/AmourFood/af/.cache/dev-404-page.js"))),
-  "component---src-pages-404-jsx": hot(preferDefault(require("/Users/ybidois/AmourFood/af/src/pages/404.jsx"))),
-  "component---src-pages-app-jsx": hot(preferDefault(require("/Users/ybidois/AmourFood/af/src/pages/app.jsx"))),
-  "component---src-pages-index-jsx": hot(preferDefault(require("/Users/ybidois/AmourFood/af/src/pages/index.jsx")))
+  "component---node-modules-arshad-gatsby-theme-page-core-src-templates-page-query-js": hot(preferDefault(require("/Users/ybidois/AmourFood/af/node_modules/@arshad/gatsby-theme-page-core/src/templates/page-query.js")))
 }
 

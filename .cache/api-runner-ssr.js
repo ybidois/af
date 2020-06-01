@@ -1,9 +1,15 @@
 var plugins = [{
+      plugin: require('/Users/ybidois/AmourFood/af/node_modules/gatsby-plugin-mdx/gatsby-ssr'),
+      options: {"plugins":[],"gatsbyRemarkPlugins":[{"resolve":"gatsby-remark-images","options":{"linkImagesToOriginal":false,"quality":100,"withWebp":true}}],"remarkPlugins":[null]},
+    },{
+      plugin: require('/Users/ybidois/AmourFood/af/node_modules/gatsby-plugin-theme-ui/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
       plugin: require('/Users/ybidois/AmourFood/af/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/ybidois/AmourFood/af/node_modules/gatsby-plugin-firebase/gatsby-ssr'),
-      options: {"plugins":[],"features":{"auth":true,"database":false,"firestore":false,"storage":false,"messaging":false,"functions":false,"performance":false}},
+      plugin: require('/Users/ybidois/AmourFood/af/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      options: {"plugins":[],"icon":"assets/images/favicon.png","start_url":"/","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"7e796545879a2a30100b0593a0ffc085"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

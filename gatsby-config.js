@@ -1,30 +1,54 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+require(`dotenv`).config();
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Firebase Authentication`,
+    title: `Amour Food`,
+    description: `Oublies tout ce que tu sais des courses en ligne.`,
+    siteUrl: process.env.SITE_URL || `https://www.amourfood.fr`,
+    logo: `logo.png`,
+    copyright: `© Amour Food. All rights reserved.`,
+    headerLinks: [
+      {
+        title: `Sweet Home`,
+        path: `/`,
+      },
+      {
+        title: `Notre histoire`,
+        path: `/about`,
+      },
+      {
+        title: `Nous rejoindre`,
+        path: `/join`,
+      },
+      {
+        title: `Se connecter`,
+        path: `/connect`,
+      },
+    ],
+    footerLinks: [
+      {
+        title: `Nous rejoindre`,
+        path: `/join`,
+      },
+      {
+        title: `Nous contacter`,
+        path: `/contact`,
+      },
+      {
+        title: `Mentions Très-Bien légales`,
+        path: `/contact`,
+      },
+    ],
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-postcss`,
+    `gatsby-theme-flex`,
     {
-      resolve: `gatsby-plugin-create-client-paths`,
-      options: { prefixes: [`/app/*`] }
-    },
-    {
-      resolve: "gatsby-plugin-firebase",
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
-        features: {
-          auth: true,
-          database: false,
-          firestore: false,
-          storage: false,
-          messaging: false,
-          functions: false,
-          performance: false
-        }
-      }
-    }
-  ]
-}
+        typekit: {
+          id: "bzy7slf",
+        },
+      },
+    },
+  ],
+};

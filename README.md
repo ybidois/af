@@ -1,52 +1,43 @@
-<div align="center">
-    <img src="static/gatsby-firebase-logo.png" alt="Logo" width='70%' height='auto'/>
+<div>
+<h1>Flex</h1>
+<p>
+A Gatsby starter to kick off a site using the <a href="https://github.com/arshad/gatsby-themes/tree/master/themes/gatsby-theme-flex">gatsby-theme-flex</a> theme.
+</p>
 </div>
 
-# Gatsby Firebase Authentication Starter
+<p>
+  <a href="https://flex.arshad.io"><img src="https://img.shields.io/badge/demo-netlify-success" alt="Demo"></a>
+</p>
 
-This is a gatsby starter to show how an **authentication workflow** is implemented in Gatsby using [Firebase](https://firebase.google.com/) as authentication provider.
+<p>
+  <img src="https://arshad.io/uploads/gatsby-theme-flex.gif" alt="flex preview" />
+</p>
 
-🚀 Here a [live demo](https://gatsby-firebase-simple-auth.netlify.com/) of the site.
+<h3 align="center"><code>gatsby new site arshad/gatsby-starter-flex</code></h3>
 
-This starter follows the best practices described in the official gatsby site: 
-* [Client-only Routes](https://www.gatsbyjs.org/docs/client-only-routes-and-user-authentication/) doc
-* [User Authentication](https://www.gatsbyjs.org/tutorial/authentication-tutorial/) tutorial
+## Installation
 
-It uses [Gatsby Plugin Firebase](https://www.gatsbyjs.org/packages/gatsby-plugin-firebase/) to import and set firebase SDK, and [Gatsby Plugin Create Client Path](https://www.gatsbyjs.org/packages/gatsby-plugin-create-client-paths) to set private routes.
+### Step 1: Run the following command to create a new site
 
-How it works in short:
-- Gatsby renders all unauthenticated routes as usual static pages.
-- Authenticated routes are whitelisted as client-only (in this starter all dynamic pages are under the path 'mysite.com/app/*').
-- Logged-out users are redirected to the login page if they attempt to visit private routes.
-- Logged-in users will see their private content.
-
-# Getting Started
-
-Create the `.env.development` and `.env.production` file in your root directory:
-
-```
-GATSBY_FIREBASE_API_KEY=<YOUR_FIREBASE_API_KEY>
-GATSBY_FIREBASE_AUTH_DOMAIN=<YOUR_FIREBASE_AUTH_DOMAIN>
-GATSBY_FIREBASE_DATABASE_URL=<YOUR_FIREBASE_DATABASE_URL>
-GATSBY_FIREBASE_PROJECT_ID=<YOUR_FIREBASE_PROJECT_ID>
-GATSBY_FIREBASE_STORAGE_BUCKET=<YOUR_FIREBASE_STORAGE_BUCKET>
-GATSBY_FIREBASE_MESSAGING_SENDER_ID=<YOUR_FIREBASE_MESSAGING_SENDER_ID>
-GATSBY_FIREBASE_APP_ID=<YOUR_FIREBASE_APP_ID>
-GATSBY_FIREBASE_MEASUREMENT_ID=<YOUR_FIREBASE_ANALYTICS_TRACKING_ID>
+```shell
+gatsby new site arshad/gatsby-starter-flex
 ```
 
-and then:
+### Step 2: Configure `.env`
 
+Copy `.env.example` to `.env` and update `SITE_URL`.
+
+### Step 3: Start developing
+
+```shell
+cd my-site/
+gatsby develop
 ```
-npm install
-gatsby develop 
-```
 
-# Contributing
-If you want to contribute to this starter, consider:
+## Customization
 
-- Reporting bugs and errors
-- Improve the documentation
-- Creating new features and pull requests
+Check out the docs for [gatsby-theme-flex](https://flex.arshad.io/docs).
 
-All contributions are welcome!
+## Support
+
+Create an issue on the main repo [@arshad/gatsby-themes](https://github.com/arshad/gatsby-themes/issues).

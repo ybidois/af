@@ -1,0 +1,52 @@
+---
+title: Home
+excerpt: This is the home page.
+is_front: true
+---
+
+<Hero
+  heading="Oublies tout ce que tu sais des courses en ligne"
+  lead1="Fais tes courses à plusieurs grâce à un panier commun"
+  lead2="Ne réfléchis plus aux menus grâce à un large choix de recettes"
+  lead3="Mange sain et écolo grâce aux notes des produits"
+  imageUrl="placeholder.jpg"
+  links={<Button>Démarre tes courses</Button>}
+  style={{
+    bg: "accent",
+    figure: {
+      maxWidth: "70%",
+    },
+  }}
+/>
+
+<Section 
+  heading="Edit this page"
+>
+<Div style={{
+  maxWidth: ["none", "none", "60%"]
+}}>
+
+### Add a block
+
+Edit `content/pages/home/index.mdx` to add a card.
+
+```markdown
+<Card
+heading="Iusto natus"
+imageUrl="placeholder.jpg"
+
+>
+
+Itaque rerum harum amet. Iusto natus corrupti minima esse. Eaque nam voluptates veritatis.
+
+</Card>
+```
+
+### Customize the theme
+
+Update the `primary` value in `src/gatsby-theme-flex/theme.js` to change the color of the button below.
+
+<Button>A button</Button>
+
+</Div>
+</Section>
