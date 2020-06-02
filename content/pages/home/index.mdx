@@ -4,6 +4,8 @@ excerpt: This is the home page.
 is_front: true
 ---
 
+import { Styled } from "theme-ui";
+
 <Hero
   heading="Oublies tout ce que tu sais des courses en ligne"
   lead1="Fais tes courses à plusieurs grâce à un panier commun"
@@ -19,34 +21,143 @@ is_front: true
   }}
 />
 
-<Section 
-  heading="Edit this page"
+<Section
+  heading="Les courses, c’est comme l’amour : à deux, c’est mieux."
+  style={{
+    pb: "3",
+  }}
 >
-<Div style={{
-  maxWidth: ["none", "none", "60%"]
-}}>
+  <Card
+    heading="Mel & Steph adorent utiliser le panier commun"
+    imageUrl="af-couple.png"
+  >
+    <Styled.p>
+      Ils font chacun de leur côté leurs emplettes. Et voient en temps réel ce
+      que l’autre a pris. <br />
+      <br /> Mel a oublié d’ajouter des cookies pour le goûter ? Et hop, Steph les
+      ajoutent au panier commun ! Quel homme ! <br />
+      <br /> Et s’ils veulent être plus à faire les courses, c’est possible. On
+      peut être jusqu’à 5 à faire les courses sur un panier.
+    </Styled.p>
+    <Button
+      url="https://amourfood.fr/signup"
+      style={{
+        mt: 4,
+        display: "flex",
+        mx: "auto",
+        justifyContent: "center",
+        maxWidth: "80%",
+      }}
+    >
+      Je fais les courses à deux
+    </Button>
+  </Card>
+</Section>
 
-### Add a block
-
-Edit `content/pages/home/index.mdx` to add a card.
-
-```markdown
-<Card
-heading="Iusto natus"
-imageUrl="placeholder.jpg"
-
+<Section
+  heading="Des recettes qui vont te hacher menu le travail"
+  style={{
+    pb: "3",
+    backgroundColor: "pink4",
+  }}
 >
+  <Card
+    heading="Steph & Mel ne se prennent plus la tête pour les menus"
+    imageUrl="af-recipe.png"
+  >
+    <Styled.p>
+      Ils peuvent faire leurs courses en une minute, top chrono. <br />
+      <br /> Ils utilisent notre fonctionnalité “one-click-recette”. Les ingrédients
+      d’une recette s’ajoutent au panier en un click. <br />
+      <br /> En plus, ils adorent le large choix de recettes. Ils n’ont plus
+      besoin de se creuser la tête ! <br />
+      <br /> Et hop, un crumble de courgettes hyper stylé en un click.
+    </Styled.p>
+    <Button
+      url="https://amourfood.fr/signup"
+      style={{
+        mt: 4,
+        display: "flex",
+        mx: "auto",
+        justifyContent: "center",
+        maxWidth: "80%",
+      }}
+    >
+      Je gagne du temps moi aussi
+    </Button>
+  </Card>
+</Section>
 
-Itaque rerum harum amet. Iusto natus corrupti minima esse. Eaque nam voluptates veritatis.
+<Section
+  heading="Ce n’est plus mâle de faire les courses"
+  style={{
+    pb: "3",
+  }}
+>
+  <Card
+    heading="Steph & Mel mangent plus sain et plus écolo"
+    imageUrl="af-earth.png"
+  >
+    <Styled.p>
+      Ils adorent regarder les notes Yuka directement sur Amour Food. Ca leur
+      permet de sélectionner les produits les plus sains ! <br />
+      <br />
+      Ils ont aussi un large choix de recettes végé et véganes. Encore plus
+      simple de faire un geste pour la planète. Youpie ! <br />
+      <br />
+      Enfin, ils savent que chez Amour Food, on fait la chasse au plastique. On
+      déteste les emballages inutiles et plus encore en plastique.
+    </Styled.p>
+    <Button
+      url="https://amourfood.fr/signup"
+      style={{
+        mt: 4,
+        display: "flex",
+        mx: "auto",
+        justifyContent: "center",
+        maxWidth: "80%",
+      }}
+    >
+      {" "}
+      Je mange sain et écolo
+    </Button>
+  </Card>
+</Section>
 
-</Card>
-```
-
-### Customize the theme
-
-Update the `primary` value in `src/gatsby-theme-flex/theme.js` to change the color of the button below.
-
-<Button>A button</Button>
-
-</Div>
+<Section
+  heading="Tes faims de moi seront moins difficiles"
+  style={{
+    pb: "3",
+    backgroundColor: "pink4",
+  }}
+>
+  <Card
+    heading="Mel & Steph adorent amour food pour les sous-sous
+"
+    imageUrl="af-fullcart.png"
+  >
+    <Styled.p>
+      Ils ont noté que les produits sont en général moins chers ! C’est
+      l’avantage quand on a pas de magasins physiques. <br />
+      <br />
+      En plus, ils peuvent comparer les différentes marques entre elles. Ils
+      peuvent donc choisir celles qui conviennent à leur budget. <br />
+      <br />
+      Ils cuisinent aussi plus souvent grâce aux nombreuses recettes. Ils font
+      donc plus d’économies sur les restos et autres plats minutes.
+    </Styled.p>
+    <Button
+      url="https://amourfood.fr/signup"
+      style={{
+        mt: 4,
+        display: "flex",
+        mx: "auto",
+        justifyContent: "center",
+        maxWidth: "80%",
+      }}
+    >
+      {" "}
+      Je fais des économies
+    </Button>
+  </Card>
 </Section>

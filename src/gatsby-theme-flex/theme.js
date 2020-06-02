@@ -73,15 +73,17 @@ export default {
       fontFamily: "hero",
       fontWeight: "heavy",
       color: "black1",
+      textAlign: "left",
     },
     h2: {
       fontSize: [5, 6, 7],
       fontFamily: "heading",
       fontWeight: "body",
       color: "black1",
+      textAlign: "left",
     },
     p: {
-      fontSize: [4, 5],
+      fontSize: [1, 2],
       fontFamily: "body",
       fontWeight: "body",
       color: "black1",

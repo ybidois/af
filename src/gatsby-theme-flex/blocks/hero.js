@@ -27,7 +27,9 @@ const Hero = React.forwardRef(
     <section
       ref={ref}
       sx={{
-        py: [4, 6],
+        // py: [4, 6],
+        pt: 2,
+        pb: 6,
         ...style,
       }}
       {...props}
