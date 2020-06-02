@@ -21,13 +21,14 @@ const FooterNav = ({ links }) => {
             <li
               key={title}
               sx={{
-                marginLeft: 4,
+                margin: 2,
+                textAlign: "center",
               }}
             >
               <Link
                 to={path}
                 sx={{
-                  variant: `text.small`,
+                  variant: `text.caption`,
                   textDecoration: `none`,
                 }}
               >

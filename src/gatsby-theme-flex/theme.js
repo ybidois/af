@@ -52,6 +52,13 @@ export default {
       mb: 4,
       color: "text",
     },
+    caption: {
+      fontFamily: "body",
+      lineHeight: "body",
+      fontWeight: "caption",
+      color: "black2",
+      fontSize: 0,
+    },
   },
   buttons: {
     primary: {
