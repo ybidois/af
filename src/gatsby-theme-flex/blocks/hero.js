@@ -44,7 +44,7 @@ const Hero = React.forwardRef(
       >
         <div
           sx={{
-            maxWidth: [`none`, `none`, `80%`, `80%`, `70%`],
+            maxWidth: [`none`, `95%`, `80%`, `80%`, `70%`],
           }}
         >
           {subHeading && <Styled.h4>{subHeading}</Styled.h4>}
@@ -53,7 +53,7 @@ const Hero = React.forwardRef(
               sx={{
                 mt: 4,
                 // textAlign: ["center"],
-                mb: 7,
+                mb: 5,
               }}
               dangerouslySetInnerHTML={{ __html: heading }}
             />

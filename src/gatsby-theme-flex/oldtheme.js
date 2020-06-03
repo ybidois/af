@@ -1,6 +1,7 @@
 // Add your theme styles here.
 // See https://theme-ui.com/theme-spec.
 export default {
+  breakpoints: [`450px`, `768px`, `992px`, `1200px`],
   colors: {
     primary: "#D92414",
     text: "#000000",

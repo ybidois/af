@@ -28,7 +28,7 @@ const FooterNav = ({ links }) => {
               <Link
                 to={path}
                 sx={{
-                  variant: `text.caption`,
+                  variant: `text.small`,
                   textDecoration: `none`,
                 }}
               >
@@ -46,7 +46,7 @@ const FooterNav = ({ links }) => {
             <Link
               to="/legal"
               sx={{
-                variant: `text.caption`,
+                variant: `text.small`,
                 textDecoration: `none`,
               }}
             >
