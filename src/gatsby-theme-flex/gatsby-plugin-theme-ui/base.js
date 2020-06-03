@@ -311,6 +311,7 @@ export default {
       fontStyle: `italic`,
     },
     lead: {
+      fontSize: [2],
       fontFamily: "heading",
       lineHeight: "heading",
       fontWeight: "body",
