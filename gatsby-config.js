@@ -1,6 +1,6 @@
 require(`dotenv`).config();
 
-module.exports = {
+let mentions = (module.exports = {
   siteMetadata: {
     title: `Amour Food`,
     description: `Oublies tout ce que tu sais des courses en ligne.`,
@@ -34,10 +34,6 @@ module.exports = {
         title: `Nous contacter`,
         path: `/contact`,
       },
-      {
-        title: `Mentions Très-Bien légales`,
-        path: `/contact`,
-      },
     ],
   },
   plugins: [
@@ -51,4 +47,4 @@ module.exports = {
       },
     },
   ],
-};
+});

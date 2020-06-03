@@ -36,6 +36,25 @@ const FooterNav = ({ links }) => {
               </Link>
             </li>
           ))}
+          <li
+            key="test"
+            sx={{
+              margin: 2,
+              textAlign: "center",
+            }}
+          >
+            <Link
+              to="/legal"
+              sx={{
+                variant: `text.caption`,
+                textDecoration: `none`,
+              }}
+            >
+              Mentions{" "}
+              <span sx={{ textDecoration: "line-through" }}>Très-Bien</span>{" "}
+              légales
+            </Link>
+          </li>
         </ul>
       </nav>
     )
