@@ -5,10 +5,7 @@ excerpt: c'est un beau roman, c'est une belle histoire.
 
 import { Box } from "theme-ui";
 
-<PageHeader
-  heading="Notre histoire en 3 mots"
-  lead="Résister. 1 heure et 35 minutes. Des idées hautes."
-/>
+<PageHeader heading="Notre histoire en 3 mots" />
 
 <Image
   src="af-couple-pilot.png"
@@ -16,9 +13,13 @@ import { Box } from "theme-ui";
   title="I'm a stay-at-home guy and I hate it when my girls goes to work"
 />
 
-<Section heading="Résister." style={{ pb: 0 }} />
+<Section heading="Enfer." style={{ pb: 0 }} />
 
-<Testimonial text="Créer, c'est résister" name="Misstic" imageUrl="" />
+<Testimonial
+  text="Le paradis ressemble à un supermarché"
+  name="Personne n'a jamais dit ça"
+  imageUrl=""
+/>
 
 <Box p={4} color="text" bg="pink3">
   <p>
@@ -61,59 +62,51 @@ import { Box } from "theme-ui";
   }}
 />
 
-<Section heading="1 heure et 35 minutes." style={{ pb: 0 }} />
+<Section heading="Autrement." style={{ pb: 0 }} />
 
 <Testimonial
-  text="1h35, la durée des courses y compris trajets, des personnes effectuant des courses un jour moyen"
+  text="1h35, la durée des courses y compris trajets, un jour moyen"
   name="INSEE, 2010"
   imageUrl=""
 />
 
 <Box p={4} color="text" bg="pink3">
   <p>
-    Ce temps, on rêve de le passer autrement : à cuisiner, à lire, à s'occuper
-    des gamins (LOL), en vrai, à regarder Netflix !
+    On oublie aussi bien souvent le casse-tête de trouver quoi manger le soir.
+    Les menus, c'est une charge mentale qui commence bien avant les courses, et
+    se terminent bien après.
+  </p>
+  <p>
+    Tout ce temps, on rêve de le passer autrement : à lire, à s'occuper des
+    gamins (LOL), en vrai, à regarder Netflix !
   </p>
   <p>A tout faire donc, sauf trainasser dans des rayons de supermarché.</p>
-  <p>
-    On oublie aussi bien souvent le casse-tête de trouver quoi manger le soir.
-    Les menus, c'est une charge mentale qui commence bien avant les courses,
-    durent tout le long, et se terminent bien après.
-  </p>
 </Box>
 
-<Section heading="Des idées hautes." style={{ pb: 0 }} />
+<Section heading="Résister." style={{ pb: 0 }} />
 
-<Testimonial
-  text="Pas d'idéaux. Juste des idéaux hautes"
-  name="Misstic"
-  imageUrl=""
-/>
+<Testimonial text="Créer, c'est résister" name="Misstic" imageUrl="" />
 
 <Box p={4} color="text" bg="pink3">
+  <p>Il nous a paru évident qu'il fallait faire quelque chose.</p>
+  <p> On avait envie de créer un service qui nous ressemble.</p>
+  <p>Quelque chose de funky, de collaboratif, et surtout, d'utile.</p>
   <p>
-    Il nous a paru évident qu'il fallait faire quelque chose. On avait envie de
-    créer un service qui nous ressemble, sans idéaux, mais pleines d'idées
-    hautes.
+    Utile à ceux qui, comme nous, n'ont connu que déception en faisant les
+    courses.
   </p>
   <p>
-    Quelque chose d'artistique, de funky, de collaboratif, et surtout, d'utile.
-  </p>
-  <p>
-    Utile aux familles qui comme nous sont des amoureux fous de bouffe, mais
-    n'ont connu que déception aprés déception dans les supermarchés.
-  </p>
-  <p>
-    Depuis, on fait de notre mieux pour que chaque famille, au moins une fois
-    dans sa vie, rencontre l'Amour Food.
+    Depuis, on fait de notre mieux pour que chacun, au moins une fois dans sa
+    vie, rencontre l'Amour Food.
   </p>
 </Box>
 
 <Cta
-  heading="Envie d'Amour Food?"
-  lead="Faites vos courses avec nous !"
+  heading="Envie de rencontrer l'Amour Food ?"
   links={
-    <Button url="https://amourfood.fr/signup">Rencontre l'Amour Food</Button>
+    <Button url="https://amourfood.fr/signup">
+      Fais tes courses avec nous
+    </Button>
   }
   style={{
     bg: "muted",
