@@ -1,15 +1,119 @@
 ---
 title: Notre histoire
-excerpt: c'est un beau roman, c'est une belle histoire d'Amour Food.
+excerpt: c'est un beau roman, c'est une belle histoire.
 ---
 
-<PageHeader heading="Notre histoire" lead="En construction" />
+import { Box } from "theme-ui";
+
+<PageHeader
+  heading="Notre histoire en 3 mots"
+  lead="Résister. 1 heure et 35 minutes. Des idées hautes."
+/>
+
+<Image
+  src="af-couple-pilot.png"
+  alt="pop-art image of a couple"
+  title="I'm a stay-at-home guy and I hate it when my girls goes to work"
+/>
+
+<Section heading="Résister." style={{ pb: 0 }} />
+
+<Testimonial text="Créer, c'est résister" name="Misstic" imageUrl="" />
+
+<Box p={4} color="text" bg="pink3">
+  <p>
+    Tout a commencé un soir de confinement, où nous nous sommes rendus compte
+    que notre expérience des courses s'était dégradée.{" "}
+  </p>
+  <p>Masque ou pas de masque, PQ ou pas de PQ, farine ou pas de farine...</p>
+  <p>
+    Mais soyons honnêtes, faire ses courses, c'était déjà nulle comme
+    expérience.{" "}
+  </p>
+  <p>L'attente aux caisses, les rayons mal organisés, les gens pas sympas.</p>
+  <p> On savait aussi qu'on était pas les seuls à le penser.</p>
+</Box>
+
+<Image
+  src="af-review-caisse.png"
+  alt="exemple de commentaire client d'un supermarché"
+  title="exemple de commentaire client d'un supermarché"
+  style={{
+    my: 4,
+  }}
+/>
+
+<Image
+  src="af-review-prix.png"
+  alt="exemple de commentaire client d'un supermarché"
+  title="exemple de commentaire client d'un supermarché"
+  style={{
+    my: 4,
+  }}
+/>
+
+<Image
+  src="af-review-enfer.png"
+  alt="exemple de commentaire client d'un supermarché"
+  title="exemple de commentaire client d'un supermarché"
+  style={{
+    my: 4,
+  }}
+/>
+
+<Section heading="1 heure et 35 minutes." style={{ pb: 0 }} />
+
+<Testimonial
+  text="1h35, la durée des courses y compris trajets, des personnes effectuant des courses un jour moyen"
+  name="INSEE, 2010"
+  imageUrl=""
+/>
+
+<Box p={4} color="text" bg="pink3">
+  <p>
+    Ce temps, on rêve de le passer autrement : à cuisiner, à lire, à s'occuper
+    des gamins (LOL), en vrai, à regarder Netflix !
+  </p>
+  <p>A tout faire donc, sauf trainasser dans des rayons de supermarché.</p>
+  <p>
+    On oublie aussi bien souvent le casse-tête de trouver quoi manger le soir.
+    Les menus, c'est une charge mentale qui commence bien avant les courses,
+    durent tout le long, et se terminent bien après.
+  </p>
+</Box>
+
+<Section heading="Des idées hautes." style={{ pb: 0 }} />
+
+<Testimonial
+  text="Pas d'idéaux. Juste des idéaux hautes"
+  name="Misstic"
+  imageUrl=""
+/>
+
+<Box p={4} color="text" bg="pink3">
+  <p>
+    Il nous a paru évident qu'il fallait faire quelque chose. On avait envie de
+    créer un service qui nous ressemble, sans idéaux, mais pleines d'idées
+    hautes.
+  </p>
+  <p>
+    Quelque chose d'artistique, de funky, de collaboratif, et surtout, d'utile.
+  </p>
+  <p>
+    Utile aux familles qui comme nous sont des amoureux fous de bouffe, mais
+    n'ont connu que déception aprés déception dans les supermarchés.
+  </p>
+  <p>
+    Depuis, on fait de notre mieux pour que chaque famille, au moins une fois
+    dans sa vie, rencontre l'Amour Food.
+  </p>
+</Box>
 
 <Cta
   heading="Envie d'Amour Food?"
   lead="Faites vos courses avec nous !"
   links={
-    <Button url="https://amourfood.fr/signup">Rencontrer l'Amour Food</Button>
+    <Button url="https://amourfood.fr/signup">Rencontre l'Amour Food</Button>
   }
   style={{
     bg: "muted",

@@ -27,12 +27,12 @@ let mentions = (module.exports = {
     ],
     footerLinks: [
       {
-        title: `Nous rejoindre`,
-        path: `/join`,
+        title: `Notre histoire`,
+        path: `/about`,
       },
       {
-        title: `Nous contacter`,
-        path: `/contact`,
+        title: `Nous rejoindre`,
+        path: `/join`,
       },
     ],
   },

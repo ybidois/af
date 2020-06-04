@@ -302,7 +302,6 @@ export default {
       color: "primary",
       textDecoration: `none`,
       fontWeight: `bold`,
-      color: `primary`,
       fontSize: [6],
     },
     quote: {
