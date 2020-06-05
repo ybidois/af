@@ -44,7 +44,7 @@ const Hero = React.forwardRef(
       >
         <div
           sx={{
-            maxWidth: [`none`, `95%`, `80%`, `80%`, `70%`],
+            maxWidth: [`none`, `90%`, `80%`, `80%`, `70%`],
           }}
         >
           {subHeading && <Styled.h4>{subHeading}</Styled.h4>}
@@ -61,9 +61,8 @@ const Hero = React.forwardRef(
           <Lead>{lead1}</Lead>
           <Lead>{lead2}</Lead>
           <Lead>{lead3}</Lead>
+          <BlockLinks>{links}</BlockLinks>
         </div>
-
-        <BlockLinks>{links}</BlockLinks>
 
         {children}
 

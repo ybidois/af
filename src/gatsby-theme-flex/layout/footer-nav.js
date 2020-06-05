@@ -6,7 +6,11 @@ import PropTypes from "prop-types";
 const FooterNav = ({ links }) => {
   return (
     links && (
-      <nav>
+      <nav
+        sx={{
+          width: ["100%", "90%"],
+        }}
+      >
         <ul
           sx={{
             margin: 0,
@@ -14,15 +18,17 @@ const FooterNav = ({ links }) => {
             listStyle: `none outside none`,
             display: `flex`,
             flexDirection: `row`,
-            alignItems: [`center`],
+            alignItems: [`space-evenly`],
           }}
         >
           {links.map(({ title, path }) => (
             <li
               key={title}
               sx={{
-                margin: 2,
+                my: 2,
+                mx: [2, 6],
                 textAlign: "center",
+                flexBasis: "33%",
               }}
             >
               <Link
@@ -37,10 +43,12 @@ const FooterNav = ({ links }) => {
             </li>
           ))}
           <li
-            key="test"
+            key="mentions"
             sx={{
-              margin: 2,
+              my: 2,
+              mx: [2, 6],
               textAlign: "center",
+              flexBasis: "33%",
             }}
           >
             <Link
@@ -51,7 +59,11 @@ const FooterNav = ({ links }) => {
               }}
             >
               Mentions{" "}
-              <span sx={{ textDecoration: "line-through" }}>Très-Bien</span>{" "}
+              <span
+                sx={{ textDecoration: "line-through", whiteSpace: "nowrap" }}
+              >
+                Très-Bien
+              </span>{" "}
               légales
             </Link>
           </li>

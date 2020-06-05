@@ -6,7 +6,7 @@ let mentions = (module.exports = {
     description: `Oublies tout ce que tu sais des courses en ligne.`,
     siteUrl: process.env.SITE_URL || `https://www.amourfood.fr`,
     logo: `logo.png`,
-    copyright: `© Amour Food. All rights reserved.`,
+    copyright: `© Amour Food. Tous Droits Réservés.`,
     headerLinks: [
       {
         title: `Sweet Home`,
@@ -14,25 +14,21 @@ let mentions = (module.exports = {
       },
       {
         title: `Notre histoire`,
-        path: `/about`,
-      },
-      {
-        title: `Nous rejoindre`,
-        path: `/join`,
+        path: `/histoire`,
       },
       {
         title: `Se connecter`,
-        path: `/connect`,
+        path: `/connection`,
       },
     ],
     footerLinks: [
       {
-        title: `Notre histoire`,
-        path: `/about`,
+        title: `Sweet home`,
+        path: `/`,
       },
       {
-        title: `Nous rejoindre`,
-        path: `/join`,
+        title: `Notre histoire`,
+        path: `/histoire`,
       },
     ],
   },

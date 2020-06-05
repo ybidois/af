@@ -21,7 +21,7 @@ const buttonStyles = {
   textAlign: `center`,
   lineHeight: `inherit`,
   textDecoration: `none`,
-  fontSize: 1,
+  fontSize: [1, 2],
   px: 4,
   py: 2,
   borderWidth: `1px`,
@@ -149,12 +149,12 @@ export default {
     h1: {
       ...headingStyles,
       fontFamily: `hero`,
-      fontSize: [6, 8, 10],
+      fontSize: [6, 6, 10],
       mb: [3],
     },
     h2: {
       ...headingStyles,
-      fontSize: [5, 6, 7],
+      fontSize: [5, 5, 7],
     },
     h3: {
       ...headingStyles,
@@ -294,7 +294,7 @@ export default {
       lineHeight: "body",
       fontWeight: "caption",
       color: "black2",
-      fontSize: 0,
+      fontSize: [0, 1],
     },
     branding: {
       fontFamily: "logo",
@@ -310,7 +310,7 @@ export default {
       fontStyle: `italic`,
     },
     lead: {
-      fontSize: [2],
+      fontSize: [2, 3],
       fontFamily: "heading",
       lineHeight: "heading",
       fontWeight: "body",
@@ -319,6 +319,13 @@ export default {
       strong: {
         color: `accent`,
       },
+    },
+    copyright: {
+      fontFamily: "body",
+      lineHeight: "body",
+      fontWeight: "caption",
+      color: "pink1",
+      fontSize: 0,
     },
   },
   image: {
@@ -333,7 +340,7 @@ export default {
       bg: `background`,
       boxShadow: `md`,
       borderRadius: 3,
-      maxWidth: [`none`, `350px`],
+      maxWidth: [`none`, `500px`],
       img: {
         width: `100%`,
         height: `auto`,

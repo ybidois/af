@@ -11,11 +11,12 @@ const HeaderNav = ({ links }) => {
           sx={{
             margin: 0,
             marginTop: [4, 0],
-            marginRight: 4,
+            marginRight: [4],
             padding: 0,
             listStyle: `none outside none`,
             display: `flex`,
             flexDirection: [`column`, `row`],
+            justifyContent: ["none", "space-evenly"],
             width: [`100%`, `auto`],
           }}
         >
@@ -23,7 +24,7 @@ const HeaderNav = ({ links }) => {
             <li
               key={title}
               sx={{
-                marginLeft: [0, 8],
+                marginLeft: [0, 6],
                 marginTop: [1, 0],
                 marginBottom: [2, 0],
               }}

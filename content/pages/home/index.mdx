@@ -11,7 +11,7 @@ import { Styled } from "theme-ui";
   lead1="Fais tes courses à plusieurs grâce à un panier commun"
   lead2="Ne réfléchis plus aux menus grâce à un large choix de recettes"
   lead3="Mange sain et écolo grâce aux notes des produits"
-  imageUrl="placeholder.jpg"
+  imageUrl=""
   links={<Button url="https://amourfood.fr/signup">Démarre tes courses</Button>}
   style={{
     bg: "accent",
@@ -21,12 +21,7 @@ import { Styled } from "theme-ui";
   }}
 />
 
-<Section
-  heading="Les courses, c’est comme l’amour : à plusieurs, c’est mieux."
-  style={{
-    pb: "6",
-  }}
->
+<Section heading="Tes courses, c’est comme l’amour : à deux, c’est mieux.">
   <Card
     heading="Tu vas adorer utiliser le panier commun"
     imageUrl="af-familycart.png"
@@ -50,7 +45,22 @@ import { Styled } from "theme-ui";
         maxWidth: "80%",
       }}
     >
-      Je fais les courses à plusieurs
+      Je fais les courses à deux
+    </Button>
+    <Button
+      url="https://amourfood.fr/signup"
+      style={{
+        mt: [1, 2],
+        mb: 2,
+        display: "flex",
+        mx: "auto",
+        justifyContent: "center",
+        maxWidth: "80%",
+        backgroundColor: "none",
+        color: "primary",
+      }}
+    >
+      et plus, si affinités
     </Button>
   </Card>
 </Section>
@@ -92,7 +102,7 @@ import { Styled } from "theme-ui";
 </Section>
 
 <Section
-  heading="Ce n’est plus mâle de faire les courses"
+  heading="Ce n’est plus mâle de faire tes courses"
   style={{
     pb: "6",
   }}
@@ -138,7 +148,7 @@ import { Styled } from "theme-ui";
   <Card
     heading="Tu vas adorer amour food pour les sous-sous
 "
-    imageUrl="af-fullcart.png"
+    imageUrl="af-cartpromo.png"
   >
     <Styled.p>
       Tu noteras que les produits sont en général moins chers ! C’est l’avantage
