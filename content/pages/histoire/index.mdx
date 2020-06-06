@@ -3,25 +3,17 @@ title: Notre histoire
 excerpt: c'est un beau roman, c'est une belle histoire.
 ---
 
+import { Card } from "theme-ui";
 import { Box } from "theme-ui";
 
 <PageHeader heading="Notre histoire en 3 mots" />
-
-<Image
-  src="af-couple-pilot.png"
-  alt="pop-art image of a couple"
-  title="I'm a stay-at-home guy and I hate it when my girls goes to work"
-/>
-
-<Section heading="Enfer." style={{ pb: 0 }} />
-
+<Section heading="Enfer." style={{ bg:'secondary' }}>
 <Testimonial
   text="Le paradis ressemble à un supermarché"
   name="Personne n'a jamais dit ça"
   imageUrl=""
 />
-
-<Box p={4} color="text" bg="pink3">
+<Card style={{ my: [4] }}>
   <p>
     Tout a commencé un soir de confinement, où nous nous sommes rendus compte
     que notre expérience des courses s'était dégradée.{" "}
@@ -33,14 +25,16 @@ import { Box } from "theme-ui";
   </p>
   <p>L'attente aux caisses, les rayons mal organisés, les gens pas sympas.</p>
   <p> On savait aussi qu'on était pas les seuls à le penser.</p>
-</Box>
+</Card>
 
 <Image
   src="af-review-caisse.png"
   alt="exemple de commentaire client d'un supermarché"
   title="exemple de commentaire client d'un supermarché"
   style={{
-    my: 4,
+    mt: [0, 4, 6],
+    mb: [2, 4, 6],
+    maxWidth: [`none`, `500px`, `600px`, `700px`, `800px`],
   }}
 />
 
@@ -49,7 +43,8 @@ import { Box } from "theme-ui";
   alt="exemple de commentaire client d'un supermarché"
   title="exemple de commentaire client d'un supermarché"
   style={{
-    my: 4,
+    my: [2, 4, 6],
+    maxWidth: [`none`, `500px`, `600px`, `700px`, `800px`],
   }}
 />
 
@@ -58,19 +53,21 @@ import { Box } from "theme-ui";
   alt="exemple de commentaire client d'un supermarché"
   title="exemple de commentaire client d'un supermarché"
   style={{
-    my: 4,
+    mt: [2, 4, 6],
+    mb: [0, 2, 4],
+    maxWidth: [`none`, `500px`, `600px`, `700px`, `800px`],
   }}
 />
+</Section>
 
-<Section heading="Autrement." style={{ pb: 0 }} />
-
+<Section heading="Autrement.">
 <Testimonial
   text="1h35, la durée des courses y compris trajets, un jour moyen"
   name="INSEE, 2010"
   imageUrl=""
 />
 
-<Box p={4} color="text" bg="pink3">
+<Card style={{ mt: [4] }}>
   <p>
     On oublie aussi bien souvent le casse-tête de trouver quoi manger le soir.
     Les menus, c'est une charge mentale qui commence bien avant les courses, et
@@ -81,13 +78,13 @@ import { Box } from "theme-ui";
     gamins (LOL), en vrai, à regarder Netflix !
   </p>
   <p>A tout faire donc, sauf trainasser dans des rayons de supermarché.</p>
-</Box>
+</Card>
+</Section>
 
-<Section heading="Résister." style={{ pb: 0 }} />
-
+<Section heading="Résister." style={{ bg:'secondary', my: 2 }}>
 <Testimonial text="Créer, c'est résister" name="Misstic" imageUrl="" />
 
-<Box p={4} color="text" bg="pink3">
+<Card style={{ my: 4 }} imageUrl="af-couple-pilot.png">
   <p>Il nous a paru évident qu'il fallait faire quelque chose.</p>
   <p> On avait envie de créer un service qui nous ressemble.</p>
   <p>Quelque chose de funky, de collaboratif, et surtout, d'utile.</p>
@@ -99,7 +96,8 @@ import { Box } from "theme-ui";
     Depuis, on fait de notre mieux pour que chacun, au moins une fois dans sa
     vie, rencontre l'Amour Food.
   </p>
-</Box>
+</Card>
+</Section>
 
 <Cta
   heading="Envie de rencontrer l'Amour Food ?"
@@ -110,5 +108,6 @@ import { Box } from "theme-ui";
   }
   style={{
     bg: "muted",
+    mt: 1,
   }}
 />

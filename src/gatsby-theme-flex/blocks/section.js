@@ -22,6 +22,8 @@ const Section = React.forwardRef(
           <div
             sx={{
               display: `flex`,
+              flexDirection: "column",
+              alignItems: "center",
               justifyContent: `center`,
             }}
           >

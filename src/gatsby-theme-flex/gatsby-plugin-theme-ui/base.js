@@ -37,7 +37,7 @@ export default {
     text: "#000",
     background: "#fff",
     primary: "#D92414",
-    secondary: "#66B388",
+    secondary: "#F8DFDD",
     muted: "#f6f6f6",
     highlight: "#efeffe",
     gray: "#4C4C4C",
@@ -48,6 +48,7 @@ export default {
     pink3: "#F2C0BB",
     pink4: "#F8DFDD",
     yellow1: "#F0E088",
+    green1: "#66B388",
     modes: {
       dark: {
         text: "#fff",
@@ -185,7 +186,7 @@ export default {
     blockquote: {
       fontWeight: `bold`,
       p: {
-        fontSize: [4, 6, 6],
+        fontSize: [5, 6, 7, 8, 10],
         lineHeight: [1.4],
       },
     },
@@ -305,7 +306,7 @@ export default {
       fontSize: [6],
     },
     quote: {
-      fontSize: [4, 5],
+      fontSize: [4, 5, 6],
       lineHeight: [1.4],
       fontStyle: `italic`,
     },
@@ -338,6 +339,19 @@ export default {
   card: {
     default: {
       bg: `background`,
+      boxShadow: `md`,
+      borderRadius: 3,
+      maxWidth: [`none`, `500px`, `600px`, `700px`, `800px`],
+      img: {
+        width: `100%`,
+        height: `auto`,
+      },
+      "> div": {
+        p: [4, 6],
+      },
+    },
+    contrast: {
+      bg: `pink4`,
       boxShadow: `md`,
       borderRadius: 3,
       maxWidth: [`none`, `500px`, `600px`, `700px`, `800px`],

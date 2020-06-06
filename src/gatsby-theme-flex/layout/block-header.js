@@ -11,7 +11,7 @@ const BlockHeader = ({ style, subHeading, heading, lead, ...props }) => {
         textAlign: `center`,
         maxWidth: [`none`, `80%`, `80%`, `70%`, `80%`],
         mx: `auto`,
-        mb: 6,
+        mb: `auto`,
         ...style,
       }}
       {...props}
