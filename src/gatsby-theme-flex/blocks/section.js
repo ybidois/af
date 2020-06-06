@@ -10,7 +10,7 @@ const Section = React.forwardRef(
     <section
       ref={ref}
       sx={{
-        py: [6, 6, 10],
+        py: [6],
         ...style,
       }}
       {...props}

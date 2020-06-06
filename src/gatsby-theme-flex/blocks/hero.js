@@ -29,7 +29,7 @@ const Hero = React.forwardRef(
       sx={{
         // py: [4, 6],
         pt: 2,
-        pb: 6,
+        pb: [4, 4, 5, 6, 7],
         ...style,
       }}
       {...props}
@@ -44,16 +44,16 @@ const Hero = React.forwardRef(
       >
         <div
           sx={{
-            maxWidth: [`none`, `90%`, `80%`, `80%`, `70%`],
+            maxWidth: [`none`, `90%`, `80%`],
           }}
         >
           {subHeading && <Styled.h4>{subHeading}</Styled.h4>}
           {heading && (
             <Styled.h1
               sx={{
-                mt: 4,
+                mt: [4, 4, 4, 4, 6],
                 // textAlign: ["center"],
-                mb: 5,
+                mb: [5, 5, 6, 6, 7],
               }}
               dangerouslySetInnerHTML={{ __html: heading }}
             />
@@ -61,7 +61,13 @@ const Hero = React.forwardRef(
           <Lead>{lead1}</Lead>
           <Lead>{lead2}</Lead>
           <Lead>{lead3}</Lead>
-          <BlockLinks>{links}</BlockLinks>
+          <BlockLinks
+            style={{
+              mt: [1, 4, 5, 6, 7],
+            }}
+          >
+            {links}
+          </BlockLinks>
         </div>
 
         {children}

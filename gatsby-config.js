@@ -23,7 +23,7 @@ let mentions = (module.exports = {
     ],
     footerLinks: [
       {
-        title: `Sweet home`,
+        title: `Sweet Home`,
         path: `/`,
       },
       {

@@ -21,9 +21,9 @@ const buttonStyles = {
   textAlign: `center`,
   lineHeight: `inherit`,
   textDecoration: `none`,
-  fontSize: [1, 2],
-  px: 4,
-  py: 2,
+  fontSize: [1, 2, 3, 4, 5],
+  px: [4, 4],
+  py: [2, 2],
   borderWidth: `1px`,
   borderStyle: `solid`,
   borderRadius: 4,
@@ -149,16 +149,16 @@ export default {
     h1: {
       ...headingStyles,
       fontFamily: `hero`,
-      fontSize: [6, 6, 10],
+      fontSize: [6, 7, 8, 9, 10],
       mb: [3],
     },
     h2: {
       ...headingStyles,
-      fontSize: [5, 5, 7],
+      fontSize: [5, 5, 6, 7, 8],
     },
     h3: {
       ...headingStyles,
-      fontSize: [3, 5, 6],
+      fontSize: [3, 4, 5, 6, 7],
     },
     h4: {
       ...headingStyles,
@@ -176,7 +176,7 @@ export default {
       },
     },
     p: {
-      fontSize: [1, 2],
+      fontSize: [1, 2, 3, 4, 5],
       m: 0,
       "+ p, + button": {
         mt: [2, 4],
@@ -260,12 +260,12 @@ export default {
     },
     secondary: {
       ...buttonStyles,
-      bg: `secondary`,
-      borderColor: `secondary`,
-      color: invert(`text`),
+      bg: `background`,
+      borderColor: `primary`,
+      color: `primary`,
       "&:hover": {
-        bg: darken(`secondary`, 0.2),
-        borderColor: darken(`secondary`, 0.2),
+        bg: darken(`background`, 0.2),
+        borderColor: darken(`primary`, 0.2),
       },
     },
     tertiary: {
@@ -294,7 +294,7 @@ export default {
       lineHeight: "body",
       fontWeight: "caption",
       color: "black2",
-      fontSize: [0, 1],
+      fontSize: [0, 1, 2],
     },
     branding: {
       fontFamily: "logo",
@@ -310,12 +310,12 @@ export default {
       fontStyle: `italic`,
     },
     lead: {
-      fontSize: [2, 3],
+      fontSize: [2, 3, 4, 5, 6],
       fontFamily: "heading",
       lineHeight: "heading",
       fontWeight: "body",
       color: `text`,
-      mb: 4,
+      mb: [4, 4, 4, 4, 5],
       strong: {
         color: `accent`,
       },
@@ -340,7 +340,7 @@ export default {
       bg: `background`,
       boxShadow: `md`,
       borderRadius: 3,
-      maxWidth: [`none`, `500px`],
+      maxWidth: [`none`, `500px`, `600px`, `700px`, `800px`],
       img: {
         width: `100%`,
         height: `auto`,

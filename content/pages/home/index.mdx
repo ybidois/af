@@ -5,6 +5,7 @@ is_front: true
 ---
 
 import { Styled } from "theme-ui";
+import BlockLinks from "gatsby-theme-flex/src/layout/block-links";
 
 <Hero
   heading="Oublies tout ce que tu sais des courses en ligne"
@@ -15,9 +16,6 @@ import { Styled } from "theme-ui";
   links={<Button url="https://amourfood.fr/signup">Démarre tes courses</Button>}
   style={{
     bg: "accent",
-    figure: {
-      maxWidth: ["70%", "50%"],
-    },
   }}
 />
 
@@ -26,42 +24,28 @@ import { Styled } from "theme-ui";
     heading="Tu vas adorer utiliser le panier commun"
     imageUrl="af-familycart.png"
   >
-    <Styled.p>
+    <p>
       Chacun fait de son côté ses emplettes. Et tu voies en temps réel ce que
       l’autre a pris. <br />
       <br /> Tu as oublié d’ajouter des yaourts pour le dessert ? Et hop, quelqu'un
       d'autre l'a ajouté au panier commun ! Youpie ! <br />
       <br /> Tu peux être jusqu’à 5 à faire les courses sur un même panier,
       c'est génial !
-    </Styled.p>
-    <Button
-      url="https://amourfood.fr/signup"
+    </p>
+    <BlockLinks>
+    <Button url="https://amourfood.fr/signup">Fais tes courses à deux</Button>
+    </BlockLinks>
+    <BlockLinks
+    style={{
+      mt: 2,
+    }}>
+    <Button 
       style={{
-        mt: [6, 4],
-        mb: 2,
-        display: "flex",
-        mx: "auto",
-        justifyContent: "center",
-        maxWidth: "80%",
-      }}
-    >
-      Je fais les courses à deux
-    </Button>
-    <Button
-      url="https://amourfood.fr/signup"
-      style={{
-        mt: [1, 2],
-        mb: 2,
-        display: "flex",
-        mx: "auto",
-        justifyContent: "center",
-        maxWidth: "80%",
-        backgroundColor: "none",
-        color: "primary",
-      }}
-    >
-      et plus, si affinités
-    </Button>
+      variant: 'buttons.secondary'
+      }} 
+      url="https://amourfood.fr/signup">Et plus, si affinités</Button>
+    </BlockLinks>
+
   </Card>
 </Section>
 
@@ -85,19 +69,9 @@ import { Styled } from "theme-ui";
       <br /> Et hop, tout pour faire un crumble de courgettes hyper stylé en un click
       dans ton panier.
     </Styled.p>
-    <Button
-      url="https://amourfood.fr/signup"
-      style={{
-        mt: 6,
-        mb: 2,
-        display: "flex",
-        mx: "auto",
-        justifyContent: "center",
-        maxWidth: "80%",
-      }}
-    >
-      Je gagne du temps
-    </Button>
+    <BlockLinks>
+      <Button url="https://amourfood.fr/signup">Je gagne du temps</Button>
+    </BlockLinks>
   </Card>
 </Section>
 
@@ -121,20 +95,9 @@ import { Styled } from "theme-ui";
       Enfin, chez Amour Food, on fait la chasse au plastique. On déteste les
       emballages inutiles et plus encore en plastique. Toi aussi ?
     </Styled.p>
-    <Button
-      url="https://amourfood.fr/signup"
-      style={{
-        mt: 6,
-        mb: 2,
-        display: "flex",
-        mx: "auto",
-        justifyContent: "center",
-        maxWidth: "80%",
-      }}
-    >
-      {" "}
-      Je mange sain et écolo
-    </Button>
+    <BlockLinks>
+      <Button url="https://amourfood.fr/signup">Je mange sain et écolo</Button>
+    </BlockLinks>
   </Card>
 </Section>
 
@@ -160,19 +123,8 @@ import { Styled } from "theme-ui";
       Tu cuisineras aussi plus souvent grâce à nos nombreuses recettes. C'est
       donc plus d’économies sur les restos et autres plats minutes.
     </Styled.p>
-    <Button
-      url="https://amourfood.fr/signup"
-      style={{
-        mt: 6,
-        mb: 2,
-        display: "flex",
-        mx: "auto",
-        justifyContent: "center",
-        maxWidth: "80%",
-      }}
-    >
-      {" "}
-      Je fais des économies
-    </Button>
+    <BlockLinks>
+      <Button url="https://amourfood.fr/signup">Je fais des économies</Button>
+    </BlockLinks>
   </Card>
 </Section>

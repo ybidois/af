@@ -33,8 +33,7 @@ const HeaderNav = ({ links }) => {
                 to={path}
                 style={{
                   textDecoration: `none`,
-                  color: `black2`,
-                  fontSize: 1,
+                  variant: "text.small",
                   // textTransform: `uppercase`,
                   letterSpacing: 1,
                   textAlign: `center`,
