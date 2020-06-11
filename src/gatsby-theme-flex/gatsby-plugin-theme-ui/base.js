@@ -328,6 +328,13 @@ export default {
       color: "pink1",
       fontSize: 0,
     },
+    countdown: {
+      fontFamily: "monospace",
+      lineHeight: "heading",
+      fontWeight: "bold",
+      color: "background",
+      textAlign: "center",
+    },
   },
   image: {
     avatar: {
@@ -374,6 +381,12 @@ export default {
       "> div": {
         py: [4, 6],
       },
+    },
+  },
+  embed: {
+    form: {
+      maxWidth: [`none`, `500px`, `600px`, `700px`, `800px`],
+      height: `80vh`,
     },
   },
 };
