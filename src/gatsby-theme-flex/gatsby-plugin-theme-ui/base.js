@@ -53,12 +53,12 @@ export default {
       dark: {
         text: "#fff",
         background: "#060606",
-        primary: "#ffa7c4",
-        secondary: "#82aaff",
+        primary: "#D92414",
+        secondary: "#4C4C4C",
         muted: "#191919",
-        highlight: "#29112c",
+        highlight: "#ffa7c4",
         gray: "#4C4C4C",
-        accent: "#c0f",
+        accent: "#191919",
       },
     },
     prism: {
@@ -386,7 +386,43 @@ export default {
   embed: {
     form: {
       maxWidth: [`none`, `500px`, `600px`, `700px`, `800px`],
-      height: `80vh`,
+      height: [`90vh`, `100vh`, `60vh`, `60vh`],
+    },
+  },
+  forms: {
+    label: {
+      fontFamily: "body",
+      lineHeight: "body",
+      fontWeight: "caption",
+      color: "text",
+      fontSize: [0, 1, 2],
+    },
+    input: {
+      borderColor: "gray",
+      "&:focus": {
+        borderColor: "primary",
+        boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,
+        outline: "none",
+      },
+    },
+    select: {
+      borderColor: "gray",
+      "&:focus": {
+        borderColor: "primary",
+        boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,
+        outline: "none",
+      },
+    },
+    textarea: {
+      borderColor: "gray",
+      "&:focus": {
+        borderColor: "primary",
+        boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,
+        outline: "none",
+      },
+    },
+    slider: {
+      bg: "muted",
     },
   },
 };

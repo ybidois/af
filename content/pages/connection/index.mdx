@@ -3,15 +3,27 @@ title: Se connecter
 excerpt: Connecte-toi à ton compte et rencontre l'Amour Food.
 ---
 
-<PageHeader heading="Se connecter" lead="En construction" />
+import { Box, Label, Input, Select, Checkbox } from "theme-ui";
+
+<Section>
+  <Box as="form" onSubmit={(e) => e.preventDefault()}>
+    <Label htmlFor="username">E-mail</Label>
+    <Input name="username" id="username" mb={3} />
+    <Label htmlFor="password">Mot de passe</Label>
+    <Input type="password" name="password" id="password" mb={3} />
+    <Box>
+      <Label mb={3}>
+        <Checkbox />
+        Reste connecté
+      </Label>
+    </Box>
+    <Button>Se connecter</Button>
+  </Box>
+</Section>
 
 <Cta
-  heading="Envie de rencontrer l'Amour Food ?"
-  links={
-    <Button url="https://amourfood.fr/signup">
-      Fais tes courses avec nous
-    </Button>
-  }
+  heading="Tu n'as pas encore rencontré l'Amour Food ?"
+  links={<Button url="/lancement">Fais tes courses avec nous</Button>}
   style={{
     bg: "muted",
   }}

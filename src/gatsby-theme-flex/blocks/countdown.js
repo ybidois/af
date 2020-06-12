@@ -41,20 +41,39 @@ const CountdownTimer = () => {
   });
 
   return (
-    <Box py={[5, 6, 7, 8]} my={[5, 6, 7, 8]} mx={[7, 8, 9, 10]} bg="pink1">
-      <div sx={{ variant: "text.countdown" }}>
+    <div
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "space-evenly",
+        my: [5],
+      }}
+    >
+      <div
+        sx={{
+          variant: "text.countdown",
+          textAlign: "center",
+          backgroundColor: "pink1",
+          maxWidth: ["80%"],
+          padding: [6],
+        }}
+      >
         {timerComponents.length ? (
           timerComponents
         ) : (
           <span>
-            Le concours est fini !{" "}
+            Le concours est fini !
             <span role="img" aria-label="kiss">
               😘
             </span>
           </span>
         )}
       </div>
-    </Box>
+      <div sx={{ variant: "styles.h4", textAlign: "center" }}>
+        avant le lancement officiel
+      </div>
+    </div>
   );
 };
 
