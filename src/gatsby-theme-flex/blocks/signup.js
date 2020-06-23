@@ -1,5 +1,4 @@
 /** @jsx jsx */
-import React from "react";
 import { jsx, Embed } from "theme-ui";
 
 const Signup = () => {

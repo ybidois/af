@@ -1,10 +1,32 @@
 /** @jsx jsx */
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { jsx, Container, Styled } from "theme-ui";
 import PropTypes from "prop-types";
 import BlockLinks from "gatsby-theme-flex/src/layout/block-links";
 import Lead from "gatsby-theme-flex/src/components/lead";
 import Image from "gatsby-theme-flex/src/components/image";
+import Button from "gatsby-theme-flex/src/components/button";
+
+function FlashingCta(props) {
+  const [counter, setCounter] = useState(0);
+  const allctas = [
+    "Démarre tes courses",
+    "Fais tes courses à deux",
+    "Ne réfléchis plus aux menus",
+    "Mange sain et écolo",
+    "Fais des économies",
+  ];
+  const [cta, setCta] = useState("");
+  useEffect(() => {
+    counter === 5
+      ? setCounter(0)
+      : setTimeout(() => setCounter(counter + 1), 2000);
+    setCta(allctas[counter]);
+  }, [counter]);
+  console.log(cta);
+
+  return <Button url="/lancement">{cta}</Button>;
+}
 
 const Hero = React.forwardRef(
   (
@@ -66,7 +88,7 @@ const Hero = React.forwardRef(
               mt: [1, 4, 5, 6, 7],
             }}
           >
-            {links}
+            <FlashingCta link={links} />
           </BlockLinks>
         </div>
 

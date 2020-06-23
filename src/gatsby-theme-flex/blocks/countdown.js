@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { useEffect, useState } from "react";
-import { jsx, Box } from "theme-ui";
+import { jsx } from "theme-ui";
 const CountdownTimer = () => {
   const calculateTimeLeft = () => {
     const difference = +new Date("2021-01-01") - +new Date();
