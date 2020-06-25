@@ -11,16 +11,17 @@ function FlashingCta(props) {
   const [counter, setCounter] = useState(0);
   const allctas = [
     "Démarre tes courses",
-    "Fais tes courses à deux",
-    "Ne réfléchis plus aux menus",
+    "Apprends à cuisiner",
+    "Gagne du temps",
     "Mange sain et écolo",
+    "Fais tes courses à deux",
     "Fais des économies",
   ];
   const [cta, setCta] = useState("");
   useEffect(() => {
-    counter === 5
+    counter === 6
       ? setCounter(0)
-      : setTimeout(() => setCounter(counter + 1), 2000);
+      : setTimeout(() => setCounter(counter + 1), 2500);
     setCta(allctas[counter]);
   }, [counter]);
   console.log(cta);

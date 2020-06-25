@@ -9,7 +9,7 @@ import BlockLinks from "gatsby-theme-flex/src/layout/block-links";
 
 <Hero
   heading="Oublie tout ce que tu sais des courses en ligne"
-  lead1="Fais tes courses à plusieurs grâce à un panier commun"
+  lead1="Apprends à cuisiner tout en faisant tes courses"
   lead2="Ne réfléchis plus aux menus grâce à un large choix de recettes"
   lead3="Mange sain et écolo grâce aux notes des produits"
   imageUrl=""
@@ -19,31 +19,20 @@ import BlockLinks from "gatsby-theme-flex/src/layout/block-links";
   }}
 />
 
-<Section heading="Tes courses, c’est comme l’amour : à deux, c’est mieux.">
+<Section heading="Indignez-vous de cuisiner si mâle.">
   <Card
-    heading="Tu vas adorer utiliser le panier commun"
-    imageUrl="af-familycart.png"
+    heading="Apprends à cuisiner en faisant tes courses"
+    imageUrl="af-forget.png"
   >
     <p>
-      Chacun fait de son côté ses emplettes. Et tu voies en temps réel ce que
-      l’autre a pris. <br />
-      <br /> Tu as oublié d’ajouter des yaourts pour le dessert ? Et hop, quelqu'un
-      d'autre l'a ajouté au panier commun ! Youpie ! <br />
-      <br /> Tu peux être jusqu’à 5 à faire les courses sur un même panier,
-      c'est génial !
+      Avec Amour Food, tu apprends tout sur la cuisine lorsque tu fais tes courses.<br />
+      <br /> Par exemple, tu veux mettre des navets dans ton panier, mais tu ne sais pas comment les cuisiner ? <br /><br />
+      Et hop, une petite vidéo explicative de ce que c'est un navet ! <br /><br />
+      Tu pourras tout savoir : comment ça pousse, quand, où, comment le cuisiner. <br /><br /> 
+      On te recommendera aussi des supers recettes qui vont mettre tes navets sous le feux des projecteurs. <br /> 
     </p>
     <BlockLinks>
-    <Button url="/lancement">Fais tes courses à deux</Button>
-    </BlockLinks>
-    <BlockLinks
-    style={{
-      mt: 2,
-    }}>
-    <Button 
-      style={{
-      variant: 'buttons.secondary'
-      }} 
-      url="/lancement">Et plus, si affinités</Button>
+    <Button url="/lancement">Apprends à cuisiner</Button>
     </BlockLinks>
 
   </Card>
@@ -93,7 +82,7 @@ import BlockLinks from "gatsby-theme-flex/src/layout/block-links";
       simple de faire un geste pour la planète. Youpie ! <br />
       <br />
       Enfin, chez Amour Food, on fait la chasse au plastique. On déteste les
-      emballages inutiles et plus encore en plastique. Toi aussi ?
+      emballages inutiles, et plus encore en plastique. Toi aussi ?
     </Styled.p>
     <BlockLinks>
       <Button url="/lancement">Mange sain et écolo</Button>
@@ -101,11 +90,44 @@ import BlockLinks from "gatsby-theme-flex/src/layout/block-links";
   </Card>
 </Section>
 
+<Section heading="Tes courses, c’est comme l’amour : à deux, c’est mieux."
+  style={{
+    pb: "6",
+    backgroundColor: "secondary",
+  }}>
+  <Card
+    heading="Tu vas adorer utiliser le panier commun"
+    imageUrl="af-familycart.png"
+  >
+    <p>
+      Chacun fait de son côté ses emplettes. Et tu voies en temps réel ce que
+      l’autre a pris. <br />
+      <br /> Tu as oublié d’ajouter des yaourts pour le dessert ? Et hop, quelqu'un
+      d'autre l'a ajouté au panier commun ! Youpie ! <br />
+      <br /> Tu peux être jusqu’à 5 à faire les courses sur un même panier,
+      c'est génial !
+    </p>
+    <BlockLinks>
+    <Button url="/lancement">Fais tes courses à deux</Button>
+    </BlockLinks>
+    <BlockLinks
+    style={{
+      mt: 2,
+    }}>
+    <Button 
+      style={{
+      variant: 'buttons.secondary'
+      }} 
+      url="/lancement">Et plus, si affinités</Button>
+    </BlockLinks>
+
+  </Card>
+</Section>
+
 <Section
   heading="Tes faims de moi seront moins difficiles"
   style={{
     pb: "6",
-    backgroundColor: "secondary",
   }}
 >
   <Card
@@ -117,11 +139,11 @@ import BlockLinks from "gatsby-theme-flex/src/layout/block-links";
       Tu noteras que les produits sont en général moins chers ! C’est l’avantage
       quand on a pas de magasins physiques. <br />
       <br />
-      En plus, tu pourras facilement comparer les différentes marques entre
-      elles. Tu choisis celles qui conviennent à ton budget. <br />
-      <br />
       Tu cuisineras aussi plus souvent grâce à nos nombreuses recettes. C'est
-      donc plus d’économies sur les restos et autres plats minutes.
+      donc plus d’économies sur les restos et autres plats-minutes. <br />
+      <br />
+      Enfin, tu pourras faire tes courses à plusieurs grâce au panier commun, et
+      partager la facture avec ta famille ou tes amis.
     </Styled.p>
     <BlockLinks>
       <Button url="/lancement">Fais des économies</Button>
