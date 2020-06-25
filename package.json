@@ -35,6 +35,7 @@
   "dependencies": {
     "formik": "^2.1.4",
     "gatsby": "^2.21.11",
+    "gatsby-plugin-google-analytics": "^2.3.6",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-theme-flex": "^0.2.5",
     "react": "^16.13.1",

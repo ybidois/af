@@ -10,4 +10,7 @@ module.exports = [{
     },{
       plugin: require('../node_modules/gatsby-plugin-web-font-loader/gatsby-browser.js'),
       options: {"plugins":[],"typekit":{"id":"bzy7slf"}},
+    },{
+      plugin: require('../node_modules/gatsby-plugin-google-analytics/gatsby-browser.js'),
+      options: {"plugins":[],"trackingId":"234189317","head":false,"anonymize":true,"respectDNT":true,"exclude":["/preview/**","/do-not-track/me/too/"],"pageTransitionDelay":0,"defer":false,"sampleRate":5,"siteSpeedSampleRate":10,"cookieDomain":"amourfood.fr"},
     }]
