@@ -12,7 +12,7 @@ var plugins = [{
       options: {"plugins":[],"icon":"assets/images/favicon.png","start_url":"/","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"7e796545879a2a30100b0593a0ffc085"},
     },{
       plugin: require('/Users/ybidois/AmourFood/af/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
-      options: {"plugins":[],"trackingId":"234189317","head":false,"anonymize":true,"respectDNT":true,"exclude":["/preview/**","/do-not-track/me/too/"],"pageTransitionDelay":0,"defer":false,"sampleRate":5,"siteSpeedSampleRate":10,"cookieDomain":"amourfood.fr"},
+      options: {"plugins":[],"trackingId":"UA-167906592-1","head":false,"anonymize":true,"respectDNT":true,"exclude":["/preview/**","/do-not-track/me/too/"],"pageTransitionDelay":0,"defer":false,"sampleRate":5,"siteSpeedSampleRate":10,"cookieDomain":"amourfood.fr"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

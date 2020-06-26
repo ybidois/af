@@ -1,17 +1,16 @@
 ---
 title: Sweet Home
 excerpt: This is our home, sweet home page.
-is_front: true
 ---
 
 import { Styled } from "theme-ui";
 import BlockLinks from "gatsby-theme-flex/src/layout/block-links";
 
 <Hero
-  heading="Oublie tout ce que tu sais des courses en ligne"
+  heading="Des recettes qui vont te hacher menu le travail"
   lead1="Ne réfléchis plus aux menus grâce à un large choix de recettes"
-  lead2="Apprends à cuisiner tout en faisant tes courses"
-  lead3="Fais tes courses à deux, et plus, si affinités"
+  lead2="Trouve des recettes qui n'existent nulle part ailleurs"
+  lead3="Fais tes courses en un clin d'oeil"
   imageUrl=""
   style={{
     bg: "accent",
@@ -84,66 +83,5 @@ import BlockLinks from "gatsby-theme-flex/src/layout/block-links";
     <Button url="/lancement">Apprends à cuisiner</Button>
     </BlockLinks>
 
-  </Card>
-</Section>
-
-<Section heading="Tes courses, c’est comme l’amour : à deux, c’est mieux."
-  style={{
-    pb: "6",
-    backgroundColor: "secondary",
-  }}>
-  <Card
-    heading="Tu vas adorer utiliser le panier commun"
-    imageUrl="af-familycart.png"
-  >
-    <p>
-      Chacun fait de son côté ses emplettes. Et tu voies en temps réel ce que
-      l’autre a pris. <br />
-      <br /> Tu as oublié d’ajouter des yaourts pour le dessert ? Et hop, quelqu'un
-      d'autre l'a ajouté au panier commun ! Youpie ! <br />
-      <br /> Tu peux être jusqu’à 5 à faire les courses sur un même panier,
-      c'est génial !
-    </p>
-    <BlockLinks>
-    <Button url="/lancement">Fais tes courses à deux</Button>
-    </BlockLinks>
-    <BlockLinks
-    style={{
-      mt: 2,
-    }}>
-    <Button 
-      style={{
-      variant: 'buttons.secondary'
-      }} 
-      url="/lancement">Et plus, si affinités</Button>
-    </BlockLinks>
-
-  </Card>
-</Section>
-
-<Section
-  heading="Tes faims de moi seront moins difficiles"
-  style={{
-    pb: "6",
-  }}
->
-  <Card
-    heading="Tu vas adorer amour food pour les sous-sous
-"
-    imageUrl="af-cartpromo.png"
-  >
-    <Styled.p>
-      Tu noteras que les produits sont en général moins chers ! C’est l’avantage
-      quand on a pas de magasins physiques. <br />
-      <br />
-      Tu cuisineras aussi plus souvent grâce à nos nombreuses recettes. C'est
-      donc plus d’économies sur les restos et autres plats-minutes. <br />
-      <br />
-      Enfin, tu pourras faire tes courses à plusieurs grâce au panier commun, et
-      partager la facture avec ta famille ou tes amis.
-    </Styled.p>
-    <BlockLinks>
-      <Button url="/lancement">Fais des économies</Button>
-    </BlockLinks>
   </Card>
 </Section>

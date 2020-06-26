@@ -9,17 +9,10 @@ import Button from "gatsby-theme-flex/src/components/button";
 
 function FlashingCta(props) {
   const [counter, setCounter] = useState(0);
-  const allctas = [
-    "Démarre tes courses",
-    "Apprends à cuisiner",
-    "Gagne du temps",
-    "Mange sain et écolo",
-    "Fais tes courses à deux",
-    "Fais des économies",
-  ];
+  const allctas = ["Gagne du temps", "Mange mieux", "Apprends à cuisiner"];
   const [cta, setCta] = useState("");
   useEffect(() => {
-    counter === 6
+    counter === 3
       ? setCounter(0)
       : setTimeout(() => setCounter(counter + 1), 2500);
     setCta(allctas[counter]);
