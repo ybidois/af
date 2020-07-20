@@ -4,7 +4,7 @@ import { jsx, Embed } from "theme-ui";
 const Signup = () => {
   return (
     <Embed
-      src="https://docs.google.com/forms/d/e/1FAIpQLSdTCeKbHtkzshJPXKh8kjK6zNI-Usq4YIZhuhSHRCFppIlCUw/viewform?embedded=true"
+      src="https://docs.google.com/forms/d/e/1FAIpQLScUfgqiUjisPhTViSPI8s1BRIhIf4KHi564sm0AfOu3hPR0CQ/viewform?embedded=true"
       variant="embed.form"
     />
   );

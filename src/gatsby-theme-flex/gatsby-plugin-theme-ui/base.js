@@ -386,7 +386,7 @@ export default {
   embed: {
     form: {
       maxWidth: [`none`, `500px`, `600px`, `700px`, `800px`],
-      height: [`90vh`, `100vh`, `60vh`, `60vh`],
+      height: [`160vh`, `170vh`, `100vh`, `100vh`],
     },
   },
   forms: {
